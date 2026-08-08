@@ -6,83 +6,115 @@
 <title>Excluir Conta — Equilibrium</title>
 <style>
   :root {
-    --bg: #FCFCFC;
-    --card: #FDFBF9;
-    --text-primary: #251A15;
-    --text-secondary: #5F5651;
-    --border: #DCD6D1;
-    --accent: #C74B47;
+    --verde-profundo: #0F3D3A;
+    --verde-musgo: #2E5E4E;
+    --dourado: #D4AF37;
+    --bege: #F6F2EC;
+    --branco-quente: #FFFCF8;
+    --texto: #1F3D3A;
+    --texto-secundario: #5D6B66;
+    --borda: #E0DACD;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    background: var(--bg);
-    color: var(--text-primary);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.6;
+    background: var(--bege);
+    color: var(--texto);
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.7;
   }
   .container {
-    max-width: 640px;
+    max-width: 680px;
     margin: 0 auto;
-    padding: 48px 24px 80px;
+    padding: 56px 24px 100px;
   }
   .badge {
     display: inline-block;
     font-size: 13px;
-    color: var(--accent);
-    background: #FAECE7;
-    padding: 4px 14px;
+    letter-spacing: 1px;
+    color: var(--verde-profundo);
+    background: #E8E0C8;
+    padding: 5px 16px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
   h1 {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 32px;
-    margin: 0 0 24px;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 36px;
+    margin: 0 0 8px;
+    color: var(--verde-profundo);
   }
-  h2 { font-size: 17px; margin-top: 32px; }
-  p, li { font-size: 15px; }
-  ul { padding-left: 20px; }
+  .subtitle {
+    font-size: 15px;
+    color: var(--texto-secundario);
+    font-style: italic;
+    margin-bottom: 32px;
+  }
+  h2 {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 22px;
+    margin-top: 40px;
+    margin-bottom: 14px;
+    color: var(--verde-profundo);
+  }
+  h3 { font-size: 16px; color: var(--verde-musgo); margin-top: 24px; margin-bottom: 8px; }
+  p, li { color: var(--texto); font-size: 15.5px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  strong { color: var(--verde-profundo); }
+  a { color: var(--verde-musgo); text-decoration: underline; }
   .option {
-    background: var(--card);
-    border: 1px solid var(--border);
-    border-radius: 16px;
-    padding: 24px;
-    margin-top: 20px;
+    background: var(--branco-quente);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    padding: 22px 24px;
+    margin-top: 18px;
   }
-  .option h3 {
-    margin-top: 0;
-    font-size: 16px;
-  }
+  .option h3 { margin-top: 0; }
   .btn {
     display: inline-block;
-    background: var(--accent);
-    color: white;
+    background: var(--verde-profundo);
+    color: var(--branco-quente);
     text-decoration: none;
-    padding: 12px 24px;
+    padding: 12px 22px;
     border-radius: 24px;
     font-size: 14px;
-    margin-top: 8px;
+    margin-top: 10px;
   }
-  a { color: var(--accent); }
+  .status-yes { color: var(--verde-musgo); font-weight: 600; }
+  .status-no { color: #A65A4E; font-weight: 600; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0;
+    font-size: 14.5px;
+  }
+  th, td {
+    text-align: left;
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--borda);
+  }
+  th { color: var(--verde-profundo); font-weight: 600; }
   .footer {
     margin-top: 48px;
     font-size: 13px;
-    color: var(--text-secondary);
+    color: var(--texto-secundario);
     text-align: center;
   }
+  .footer a { color: var(--verde-musgo); }
 </style>
 </head>
 <body>
 <div class="container">
-  <span class="badge">Equilibrium</span>
+  <span class="badge">EQUILIBRIUM</span>
   <h1>Solicitar exclusão de conta e dados</h1>
+  <p class="subtitle">Última atualização: 8 de agosto de 2026</p>
 
-  <p>Você pode excluir sua conta do Equilibrium e todos os dados pessoais associados a ela de duas formas:</p>
+  <p>Você pode excluir sua conta do Equilibrium e os dados pessoais associados a ela das seguintes formas:</p>
 
   <div class="option">
-    <h3>1. Diretamente pelo app (mais rápido)</h3>
-    <p>Abra o Equilibrium → Configurações → Excluir conta → confirme a exclusão. A ação é imediata.</p>
+    <h3>1. Diretamente pelo app (recomendado)</h3>
+    <p>Abra o Equilibrium → Configurações → Excluir conta → confirme sua senha → confirme a exclusão. A ação é imediata e definitiva.</p>
   </div>
 
   <div class="option">
@@ -92,15 +124,30 @@
   </div>
 
   <h2>O que acontece quando você exclui sua conta</h2>
-  <ul>
-    <li>Seus dados pessoais identificáveis são apagados: nome, apelido, e-mail, telefone, data de nascimento e credenciais de login.</li>
-    <li>Suas frases curtidas ao longo do tempo são mantidas apenas de forma <strong>anonimizada e agregada</strong> (sem qualquer vínculo com você), para continuar ajudando a melhorar as sugestões para outras pessoas.</li>
-    <li>A exclusão é permanente e não pode ser desfeita.</li>
-  </ul>
 
-  <p>Para mais detalhes, veja nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
+  <p>Ao concluir a exclusão, seus dados são tratados de duas formas diferentes, dependendo do tipo de dado:</p>
 
-  <p>Dúvidas? Escreva para <a href="mailto:contatoapp.equilibrium@gmail.com">contatoapp.equilibrium@gmail.com</a>.</p>
+  <table>
+    <tr><th>Dado</th><th>O que acontece</th></tr>
+    <tr><td>Nome, e-mail, telefone, data de nascimento, foto de perfil, credenciais de login</td><td class="status-no">Apagados permanentemente</td></tr>
+    <tr><td><strong>Diário</strong> (texto criptografado)</td><td class="status-no">Apagado permanentemente — nunca preservado, nem de forma anônima</td></tr>
+    <tr><td><strong>Registros de check-in de humor</strong></td><td class="status-no">Apagados permanentemente — nunca preservados, nem de forma anônima</td></tr>
+    <tr><td>Escolhas de reflexões (categoria e data, sem qualquer identificador)</td><td class="status-yes">Mantidas de forma anonimizada e agregada</td></tr>
+  </table>
+
+  <p>As escolhas de reflexões mantidas de forma anonimizada não podem, pelos meios técnicos razoáveis disponíveis, ser associadas a você após a exclusão — servem apenas para ajudar a aprimorar as recomendações de reflexões para outras pessoas, de forma agregada.</p>
+
+  <p><strong>O conteúdo do Diário e os registros de humor não seguem essa anonimização — são simplesmente excluídos, sem qualquer retenção, dado o caráter mais sensível dessas informações.</strong></p>
+
+  <h2>Desinstalar não é o mesmo que excluir</h2>
+  <p>Remover o aplicativo do seu celular <strong>não apaga seus dados</strong>. Sua conta continua existindo em nossos servidores e volta a ficar disponível se você reinstalar o app e fizer login novamente. A exclusão de verdade só acontece pelos meios descritos nesta página.</p>
+
+  <h2>Isso é permanente?</h2>
+  <p>Sim. A exclusão é definitiva e não pode ser desfeita. Antes de confirmar pelo app, pedimos que você reafirme sua senha e aceite explicitamente um aviso sobre a irreversibilidade da ação.</p>
+
+  <p>Para mais detalhes sobre como tratamos seus dados, veja nossa <a href="privacidade.html">Política de Privacidade</a> e os <a href="termos.html">Termos de Uso</a>.</p>
+
+  <p>Dúvidas? Escreva para <a href="mailto:contatoapp.equilibrium@gmail.com">contatoapp.equilibrium@gmail.com</a></p>
 
   <div class="footer">Equilibrium · <a href="privacidade.html">Política de Privacidade</a> · <a href="termos.html">Termos de Uso</a></div>
 </div>
