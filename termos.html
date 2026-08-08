@@ -6,110 +6,208 @@
 <title>Termos de Uso — Equilibrium</title>
 <style>
   :root {
-    --bg: #FCFCFC;
-    --card: #FDFBF9;
-    --text-primary: #251A15;
-    --text-secondary: #5F5651;
-    --border: #DCD6D1;
-    --accent: #C74B47;
+    --verde-profundo: #0F3D3A;
+    --verde-musgo: #2E5E4E;
+    --dourado: #D4AF37;
+    --bege: #F6F2EC;
+    --branco-quente: #FFFCF8;
+    --texto: #1F3D3A;
+    --texto-secundario: #5D6B66;
+    --borda: #E0DACD;
   }
   * { box-sizing: border-box; }
   body {
     margin: 0;
-    background: var(--bg);
-    color: var(--text-primary);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.6;
+    background: var(--bege);
+    color: var(--texto);
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.7;
   }
   .container {
-    max-width: 680px;
+    max-width: 720px;
     margin: 0 auto;
-    padding: 48px 24px 80px;
+    padding: 56px 24px 100px;
   }
   .badge {
     display: inline-block;
     font-size: 13px;
-    color: var(--accent);
-    background: #FAECE7;
-    padding: 4px 14px;
+    letter-spacing: 1px;
+    color: var(--verde-profundo);
+    background: #E8E0C8;
+    padding: 5px 16px;
     border-radius: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
   }
   h1 {
-    font-family: Georgia, 'Times New Roman', serif;
-    font-size: 32px;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 40px;
     margin: 0 0 8px;
+    color: var(--verde-profundo);
   }
-  .updated {
-    color: var(--text-secondary);
-    font-size: 14px;
-    margin-bottom: 40px;
+  .subtitle {
+    font-size: 15px;
+    color: var(--texto-secundario);
+    font-style: italic;
+    margin-bottom: 32px;
+  }
+  .intro-highlight {
+    background: var(--branco-quente);
+    border-left: 3px solid var(--dourado);
+    padding: 20px 24px;
+    border-radius: 8px;
+    margin: 24px 0 40px;
+    font-size: 15.5px;
   }
   h2 {
-    font-size: 18px;
-    margin-top: 40px;
-    margin-bottom: 12px;
-    border-bottom: 1px solid var(--border);
-    padding-bottom: 8px;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 24px;
+    margin-top: 48px;
+    margin-bottom: 16px;
+    color: var(--verde-profundo);
+    border-bottom: 1px solid var(--borda);
+    padding-bottom: 10px;
   }
-  p, li { color: var(--text-primary); font-size: 15px; }
-  ul { padding-left: 20px; }
-  a { color: var(--accent); }
+  h3 {
+    font-size: 16px;
+    color: var(--verde-musgo);
+    margin-top: 28px;
+    margin-bottom: 10px;
+  }
+  p, li { color: var(--texto); font-size: 15.5px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 6px; }
+  strong { color: var(--verde-profundo); }
+  a { color: var(--verde-musgo); text-decoration: underline; }
+  hr {
+    border: none;
+    border-top: 1px solid var(--borda);
+    margin: 40px 0;
+  }
+  .closing-card {
+    background: var(--verde-profundo);
+    color: var(--branco-quente);
+    padding: 32px 28px;
+    border-radius: 16px;
+    margin-top: 48px;
+    text-align: center;
+  }
+  .closing-card p { color: var(--branco-quente); }
+  .closing-card .quote {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 22px;
+    font-style: italic;
+    margin: 0;
+  }
   .footer {
     margin-top: 48px;
     font-size: 13px;
-    color: var(--text-secondary);
+    color: var(--texto-secundario);
     text-align: center;
   }
+  .footer a { color: var(--verde-musgo); }
 </style>
 </head>
 <body>
 <div class="container">
-  <span class="badge">Equilibrium</span>
+  <span class="badge">EQUILIBRIUM</span>
   <h1>Termos de Uso</h1>
-  <p class="updated">Última atualização: [preencher na publicação]</p>
+  <p class="subtitle">Última atualização: [preencher antes da publicação]</p>
 
-  <p>Ao criar uma conta ou usar o Equilibrium, você concorda com estes Termos de Uso. Leia com atenção.</p>
+  <p>Ao criar uma conta ou usar o Equilibrium, você concorda com estes Termos de Uso. Leia com atenção — em especial as seções sobre natureza do serviço, criptografia do Diário e limitação de responsabilidade.</p>
 
-  <h2>1. O que é o Equilibrium</h2>
-  <p>O Equilibrium é um aplicativo de reflexão diária com conteúdo motivacional: frases curtas de autoconfiança e superação, escolhidas por você, que reaparecem como notificação ao longo do dia. O conteúdo tem caráter motivacional e inspiracional e não deve ser interpretado como aconselhamento profissional de qualquer natureza.</p>
+  <p>Estes Termos devem ser lidos em conjunto com nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
 
-  <h2>2. Elegibilidade — idade mínima de 18 anos</h2>
+  <h2>1. Quem somos</h2>
+  <p>O EquilibriumApp ("Equilibrium", "nós" ou "nosso") é atualmente desenvolvido e operado por <strong>William Nunes Pinheiro, pessoa física</strong>.</p>
+  <p>A operação do Equilibrium poderá futuramente ser transferida para uma pessoa jurídica constituída para a exploração do aplicativo. Caso isso aconteça, estes Termos serão atualizados, sem prejuízo dos direitos e obrigações já constituídos, e os usuários serão informados sobre a alteração.</p>
+
+  <h2>2. Natureza do serviço — não é aconselhamento profissional</h2>
+  <p><strong>O Equilibrium é um aplicativo de conteúdo motivacional e reflexivo, destinado ao uso pessoal diário. Não é, e não se propõe a ser, um serviço de saúde, terapia, aconselhamento psicológico ou qualquer forma de acompanhamento profissional. O check-in de humor e o Diário são ferramentas de autoconhecimento e registro pessoal, não instrumentos de diagnóstico ou tratamento. Nada no aplicativo substitui a orientação de um profissional de saúde qualificado.</strong></p>
+  <p>Se você precisar de apoio especializado, o Diário exibe, sempre, o contato de um canal de apoio (como o CVV).</p>
+
+  <h2>3. Elegibilidade — idade mínima de 18 anos</h2>
   <p>O Equilibrium é destinado exclusivamente a pessoas com 18 anos ou mais. Ao se cadastrar, você declara e confirma, por meio da data de nascimento informada, ter atingido essa idade mínima. O acesso é negado no cadastro caso a idade informada seja inferior a 18 anos.</p>
 
-  <h2>3. Sua conta</h2>
+  <h2>4. Sua conta</h2>
   <ul>
     <li>Você é responsável por manter a confidencialidade da sua senha e por todas as atividades realizadas na sua conta.</li>
-    <li>As informações fornecidas no cadastro (nome, apelido, e-mail, telefone quando informado, data de nascimento) devem ser verdadeiras e atuais.</li>
-    <li>Você pode encerrar sua conta a qualquer momento em Configurações → Excluir conta, ou pela <a href="excluir-conta.html">página de exclusão de conta</a>. Veja o que acontece com seus dados na <a href="privacidade.html">Política de Privacidade</a>.</li>
+    <li>As informações fornecidas no cadastro (nome, apelido, e-mail, telefone quando informado, data de nascimento, foto de perfil quando enviada) devem ser verdadeiras e atuais.</li>
+    <li>Você pode encerrar sua conta a qualquer momento em Configurações → Excluir conta. Ver o que acontece com seus dados, incluindo Diário e check-ins de humor, em nossa <a href="privacidade.html">Política de Privacidade</a>.</li>
   </ul>
 
-  <h2>4. Uso aceitável</h2>
-  <p>Você concorda em usar o Equilibrium apenas para fins pessoais e não comerciais. Não é permitido: tentar acessar contas de outras pessoas; interferir no funcionamento do app; extrair, copiar ou redistribuir o banco de frases ou qualquer conteúdo do app fora do uso normal previsto (ex: compartilhamento de uma frase individual, que é uma funcionalidade do próprio app).</p>
+  <h3>4.1 Diário e check-in de humor</h3>
+  <ul>
+    <li>O conteúdo que você escreve no Diário é seu — não reivindicamos nenhuma propriedade sobre ele, e ele nunca influencia as reflexões sugeridas a você.</li>
+    <li><strong>O Diário é criptografado ponta a ponta: não conseguimos ler o que você escreve, em nenhuma circunstância</strong> — nem para fins comerciais, publicitários, nem a pedido de suporte. Só você tem acesso, com sua senha ou com uma frase de recuperação própria (12 a 24 palavras) que o app gera e mostra uma única vez na primeira vez que você escreve algo.</li>
+    <li><strong>Você é responsável por guardar essa frase de recuperação.</strong> Se você redefinir sua senha por "Esqueci minha senha" (em vez de trocá-la sabendo a senha atual) e não tiver a frase de recuperação, o conteúdo do seu Diário se torna permanentemente inacessível — para você e para nós. Não há como restaurá-lo por esse motivo específico.</li>
+    <li>Essa limitação técnica decorrente da perda da senha e da frase de recuperação não afasta eventual responsabilidade nossa por perda de acesso decorrente de falha técnica, falha de segurança, ou outro evento legalmente imputável ao Equilibrium.</li>
+    <li><strong>Sem garantia de retenção perpétua das suas anotações.</strong> Diferente dos dados de conta exigidos por lei (nome, e-mail), não garantimos que registros de Diário ou humor fiquem disponíveis para sempre — sua disponibilidade depende de você manter acesso (senha ou frase de recuperação) e manter sua conta ativa.</li>
+    <li>O check-in de humor e o Diário possuem fluxos informativos e de consentimento próprios, apresentados no primeiro uso de cada funcionalidade — separados um do outro e do aceite destes Termos no cadastro.</li>
+    <li>Você pode apagar registros individuais de humor ou Diário a qualquer momento, diretamente na tela onde aparecem.</li>
+  </ul>
 
-  <h2>5. Propriedade intelectual</h2>
-  <p>O banco de frases, a marca "Equilibrium", o design e o código do aplicativo são de propriedade do Equilibrium ou de seus licenciantes. Você recebe uma licença pessoal, limitada e não exclusiva para usar o app conforme sua finalidade. O card de compartilhamento gerado a partir de uma frase pode ser livremente compartilhado por você em suas redes pessoais.</p>
+  <h3>4.2 Excluir conta ≠ desinstalar o app</h3>
+  <p>Desinstalar o Equilibrium do seu celular <strong>não apaga nenhum dado</strong>: sua conta e seus dados continuam existindo em nossos servidores e voltam normalmente se você reinstalar e fizer login. A única forma de apagar seus dados de verdade é pelo fluxo "Excluir conta" (Configurações), descrito na <a href="privacidade.html">Política de Privacidade</a>.</p>
 
-  <h2>6. Notificações</h2>
-  <p>Ao permitir notificações, você concorda em receber a frase escolhida (ou uma selecionada automaticamente, se o modo automático estiver ativo) até três vezes ao dia, nos horários que você configurar. Você pode desativar notificações a qualquer momento, no app ou nas configurações do seu dispositivo, sem perder acesso ao restante do app.</p>
+  <h2>5. Uso aceitável</h2>
+  <p>Você concorda em usar o Equilibrium apenas para fins pessoais e não comerciais. Não é permitido: tentar acessar contas de outras pessoas; interferir no funcionamento do app; extrair, copiar ou redistribuir o banco de reflexões ou qualquer conteúdo do app fora do uso normal previsto (ex: compartilhamento de uma reflexão individual, que é uma funcionalidade do próprio app).</p>
 
-  <h2>7. Plano gratuito e assinatura</h2>
-  <p>O uso do Equilibrium é gratuito. Um plano de assinatura paga, com um período de teste gratuito, poderá ser oferecido futuramente com funcionalidades adicionais — quando disponível, condições de cobrança, cancelamento e renovação serão detalhadas nestes Termos e no momento da contratação, conforme as políticas da App Store e Google Play. A ausência de assinatura nunca resulta em perda de acesso ao core do aplicativo.</p>
+  <h2>6. Propriedade intelectual</h2>
+  <p>O banco de reflexões, a marca "Equilibrium", o design e o código do aplicativo são de propriedade do EquilibriumApp ou de seus licenciantes. Você recebe uma licença pessoal, limitada e não exclusiva para usar o app conforme sua finalidade. O card de compartilhamento gerado a partir de uma reflexão pode ser livremente compartilhado por você em suas redes pessoais.</p>
 
-  <h2>8. Isenção de responsabilidade</h2>
-  <p>O Equilibrium é fornecido "como está". Fazemos o possível para manter o serviço disponível e o conteúdo cuidadosamente selecionado, mas não garantimos disponibilidade ininterrupta nem resultado específico do uso do app. O conteúdo não substitui aconselhamento profissional de qualquer natureza.</p>
+  <h2>7. Notificações</h2>
+  <p>Ao permitir notificações, você concorda em receber a reflexão escolhida (ou uma selecionada automaticamente, se o modo automático estiver ativo) — e variações curtas dela — nos horários que você configurar (de 1 a 5 por dia). Você pode desativar notificações a qualquer momento, no app ou nas configurações do seu dispositivo, sem perder acesso ao restante do app.</p>
 
-  <h2>9. Encerramento pelo Equilibrium</h2>
+  <h3>7.1 Sequência de dias (streak) e conquistas</h3>
+  <p>O app pode reconhecer sua constância de uso por meio de sequência de dias e conquistas. Esses recursos têm caráter lúdico e motivacional; não geram nenhum benefício financeiro, direito ou vantagem fora do próprio app.</p>
+
+  <h2>8. Plano gratuito e assinatura</h2>
+  <p>O uso do Equilibrium é gratuito. Um plano de assinatura paga, com um possível período de teste gratuito, poderá ser oferecido futuramente com funcionalidades adicionais. A ausência de assinatura nunca resulta em perda de acesso ao core do aplicativo.</p>
+
+  <h3>8.1 Mudanças de preço <em>(preparação — assinatura futura)</em></h3>
+  <p>Caso um plano de assinatura seja lançado, qualquer alteração de preço será comunicada com antecedência mínima de 30 dias antes de entrar em vigor para assinantes existentes, que poderão cancelar antes da renovação seguinte sem aceitar o novo preço.</p>
+
+  <h3>8.2 Teste gratuito e cancelamento</h3>
+  <p>Se um período de teste gratuito for oferecido, a duração e as condições para cancelar antes da cobrança serão exibidas de forma clara na tela de contratação e no momento da confirmação, com lembrete antes do fim do período de teste.</p>
+
+  <h3>8.3 Reembolso</h3>
+  <p>Cobranças de assinatura são processadas pela App Store ou Google Play, conforme a loja usada. Pedidos de reembolso seguem a política da respectiva loja — não processamos reembolsos diretamente.</p>
+
+  <h2>9. Conteúdo gerado por inteligência artificial</h2>
+  <p>Alguns recursos (como resumos periódicos da Jornada) podem ser gerados com apoio de inteligência artificial, a partir de dados agregados — período, categoria predominante e contagem de reflexões curtidas — nunca a partir do seu humor ou do texto do seu Diário (ver <a href="privacidade.html">Política de Privacidade</a>). Esse conteúdo é um apoio reflexivo, gerado automaticamente, e pode conter imprecisões — não é aconselhamento profissional verificado nem substitui o julgamento humano.</p>
+
+  <h2>10. Isenção de garantia</h2>
+  <p>O Equilibrium é fornecido "como está" e "conforme disponibilidade". Fazemos o possível para manter o serviço disponível e o conteúdo cuidadosamente selecionado, mas não garantimos disponibilidade ininterrupta, ausência de erros, nem qualquer resultado específico de bem-estar, autoconfiança ou melhora pessoal decorrente do uso do app. O conteúdo não substitui aconselhamento profissional de qualquer natureza (ver seção 2).</p>
+
+  <h2>11. Limitação de responsabilidade</h2>
+  <p>Na máxima medida permitida pela legislação brasileira, e sem prejuízo dos seus direitos como consumidor sob o Código de Defesa do Consumidor, nossa responsabilidade financeira total por qualquer disputa relacionada ao uso do Equilibrium fica limitada ao valor efetivamente pago por você nos 12 meses anteriores ao evento que originou a disputa. Essa limitação não se aplica a casos de dolo, culpa grave, ou nas hipóteses em que a lei brasileira vede expressamente a limitação de responsabilidade.</p>
+
+  <h2>12. Assunção de risco — perda de dados do Diário</h2>
+  <p>O Diário é criptografado ponta a ponta (seção 4.1). Isso significa que a perda simultânea da sua senha e da sua frase de recuperação impede a recuperação do conteúdo, sem que exista meio técnico de restaurá-lo por esse motivo. Ao usar o Diário, você reconhece e aceita esse risco como consequência inerente ao modelo de criptografia ponta a ponta. Essa assunção de risco não se aplica a casos em que a perda de acesso decorra de falha técnica, falha de segurança, ou outro evento legalmente imputável ao Equilibrium.</p>
+
+  <h2>13. Indenização</h2>
+  <p>Você concorda em nos indenizar e isentar de responsabilidade por reclamações, danos ou prejuízos sofridos por terceiros que decorram diretamente de uso indevido da sua conta, por você, em violação a estes Termos ou à lei — por exemplo, uso da conta para violar direitos de outra pessoa. Esta cláusula não se aplica a danos causados por falha do próprio Equilibrium.</p>
+
+  <h2>14. Falhas de serviços de terceiros</h2>
+  <p>O Equilibrium depende de provedores de infraestrutura de terceiros (como Google Firebase/Cloud, Apple App Store, Google Play e Expo) para funcionar. Não temos controle sobre a disponibilidade desses serviços, e não somos responsáveis por indisponibilidade, perda de dados ou mau funcionamento causados exclusivamente por falhas desses provedores, fora do nosso controle razoável.</p>
+
+  <h2>15. Encerramento de conta</h2>
   <p>Podemos suspender ou encerrar contas que violem estes Termos, mediante aviso prévio quando possível.</p>
 
-  <h2>10. Alterações a estes Termos</h2>
+  <h2>16. Alterações a estes Termos</h2>
   <p>Podemos atualizar estes Termos; mudanças relevantes serão comunicadas dentro do app antes de entrarem em vigor.</p>
 
-  <h2>11. Lei aplicável</h2>
-  <p>Estes Termos são regidos pelas leis brasileiras.</p>
+  <h2>17. Lei aplicável e foro</h2>
+  <p>Estes Termos são regidos pelas leis brasileiras. Fica eleito o foro do seu domicílio para dirimir eventuais disputas, conforme o Código de Defesa do Consumidor.</p>
 
-  <h2>12. Contato</h2>
-  <p>Dúvidas sobre estes Termos: <a href="mailto:contatoapp.equilibrium@gmail.com">contatoapp.equilibrium@gmail.com</a>.</p>
+  <h2>18. Contato</h2>
+  <p>Dúvidas sobre estes Termos: <a href="mailto:contatoapp.equilibrium@gmail.com">contatoapp.equilibrium@gmail.com</a></p>
+
+  <hr>
+
+  <div class="closing-card">
+    <p class="quote">"Reflexões que equilibram mente, coração e vida."</p>
+  </div>
 
   <div class="footer">Equilibrium · <a href="privacidade.html">Política de Privacidade</a> · <a href="excluir-conta.html">Excluir Conta</a></div>
 </div>
